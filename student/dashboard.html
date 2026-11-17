@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard | AttendEase</title><link rel="stylesheet" href="../css/style.css"></head>
+<body data-role="student" data-page="dashboard">
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="../index.html"><span class="brand-mark small">A</span><span>Attend<span class="brand-accent">Ease</span><small>Student portal</small></span></a>
+    <div class="nav-caption">WORKSPACE</div><nav><a class="nav-link active" href="dashboard.html"><span>▦</span>Dashboard</a><a class="nav-link " href="attendance.html"><span>✓</span>My Attendance</a><a class="nav-link " href="profile.html"><span>♙</span>My Profile</a><a class="nav-link " href="statistics.html"><span>▥</span>Statistics</a></nav>
+    <div class="sidebar-bottom"><div class="profile-mini"><div class="avatar">ST</div><div><b id="sideName">Student</b><small>Student</small></div></div>
+    <button class="btn btn-quiet full" data-logout>↪ &nbsp; Log out</button></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div><span class="eyebrow">ATTENDANCE MANAGEMENT</span><h1>Student Dashboard</h1></div><div class="top-actions"><span class="date-chip" id="todayLabel"></span><div class="avatar">ST</div></div></header>
+    <section class="page-content">
+<div class="welcome-row"><div><h2 id="studentWelcome">Welcome back 👋</h2><p class="muted">Here's your attendance snapshot.</p></div><span class="tag green-tag">Student account</span></div>
+<div class="stats-grid"><article class="stat-card"><div class="stat-top"><span>Total classes</span><span class="stat-icon blue">▤</span></div><strong id="myTotal">0</strong><small class="muted">Recorded sessions</small></article><article class="stat-card"><div class="stat-top"><span>Classes attended</span><span class="stat-icon green">✓</span></div><strong id="myPresent">0</strong><small class="muted">Present records</small></article><article class="stat-card"><div class="stat-top"><span>Classes missed</span><span class="stat-icon orange">−</span></div><strong id="myAbsent">0</strong><small class="muted">Absent records</small></article><article class="stat-card"><div class="stat-top"><span>Attendance</span><span class="stat-icon purple">%</span></div><strong id="myRate">0%</strong><small class="muted">Overall percentage</small></article></div>
+<div class="content-grid"><section class="panel"><div class="panel-heading"><div><h3>My attendance</h3><p class="muted">Overall attendance rate</p></div></div><div class="student-progress"><div class="progress-ring" id="myProgress"><b id="myProgressText">0%</b></div><div><h3 id="attendanceMessage">Keep it up!</h3><p class="muted">Your attendance is calculated from saved class records.</p><a class="text-link" href="attendance.html">View full history →</a></div></div></section><section class="panel"><div class="panel-heading"><div><h3>My profile</h3><p class="muted">Your registered details</p></div><a class="text-link" href="profile.html">Edit →</a></div><div class="profile-details" id="dashboardProfile"></div></section></div>
+<section class="panel table-panel"><div class="panel-heading"><div><h3>Recent attendance</h3><p class="muted">Your latest class records</p></div><a class="text-link" href="attendance.html">View all →</a></div><div class="table-scroll"><table><thead><tr><th>Date</th><th>Course</th><th>Status</th></tr></thead><tbody id="myRecent"></tbody></table></div></section>
+</section>
+    <footer class="footer">AttendEase <span>·</span> Academic Web Technology Project</footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="../js/app.js"></script></body></html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Attendance | AttendEase</title><link rel="stylesheet" href="../css/style.css"></head>
+<body data-role="student" data-page="attendance">
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="../index.html"><span class="brand-mark small">A</span><span>Attend<span class="brand-accent">Ease</span><small>Student portal</small></span></a>
+    <div class="nav-caption">WORKSPACE</div><nav><a class="nav-link " href="dashboard.html"><span>▦</span>Dashboard</a><a class="nav-link active" href="attendance.html"><span>✓</span>My Attendance</a><a class="nav-link " href="profile.html"><span>♙</span>My Profile</a><a class="nav-link " href="statistics.html"><span>▥</span>Statistics</a></nav>
+    <div class="sidebar-bottom"><div class="profile-mini"><div class="avatar">ST</div><div><b id="sideName">Student</b><small>Student</small></div></div>
+    <button class="btn btn-quiet full" data-logout>↪ &nbsp; Log out</button></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div><span class="eyebrow">ATTENDANCE MANAGEMENT</span><h1>My Attendance</h1></div><div class="top-actions"><span class="date-chip" id="todayLabel"></span><div class="avatar">ST</div></div></header>
+    <section class="page-content">
+<div class="welcome-row"><div><h2>Attendance history</h2><p class="muted">A date-wise view of your recorded attendance.</p></div><span class="tag">Read only</span></div>
+<section class="panel"><div class="toolbar"><div><h3>My class records</h3><p class="muted">Attendance can only be updated by an administrator.</p></div><div class="filter-inline"><input type="date" id="myDateFilter" aria-label="Filter by date"><select id="myStatusFilter"><option value="">All statuses</option><option value="Present">Present</option><option value="Absent">Absent</option></select></div></div><div class="table-scroll"><table><thead><tr><th>Date</th><th>Course</th><th>Status</th></tr></thead><tbody id="myAttendanceTable"></tbody></table></div><div class="empty-state" id="myAttendanceEmpty" hidden>No attendance records found.</div></section>
+</section>
+    <footer class="footer">AttendEase <span>·</span> Academic Web Technology Project</footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="../js/app.js"></script></body></html>
